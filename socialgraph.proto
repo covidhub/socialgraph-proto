@@ -16,7 +16,7 @@ service SocialGraph {
     rpc GetContacts(google.protobuf.StringValue) returns (stream Contact) {}
     rpc AddContact(Contact) returns (PublicProfile) {}
 
-    rpc GetBonds(google.protobuf.StringValue) returns (stream Contact) {}
+    rpc GetBonds(google.protobuf.StringValue) returns (stream PublicProfile) {}
     rpc AddBond(google.protobuf.StringValue) returns (PublicProfile) {}
     rpc DeleteBond(google.protobuf.StringValue) returns (PublicProfile) {}
 
