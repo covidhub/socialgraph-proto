@@ -60,7 +60,7 @@ message Recommendation {
 message Summary {
     int32 num_contacts = 1;
     int32 total_infected_contacts = 2;
-    int32 infected_contacts = 3;
+    int32 recently_infected_contacts = 3;
 
     int32 num_close_contacts = 4;
     int32 infected_close_contacts = 5;
